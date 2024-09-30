@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.phone-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    text-align: center;
+}
+
+.login-box {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    margin-bottom: 10px;
+}
+
+.login-box h1 {
+    font-family: 'Billabong', sans-serif;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+}
+
+.login-box button {
+    width: 100%;
+    background-color: #0095f6;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login-box button.facebook-login {
+    background-color: #4267b2;
+}
+
+.or-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.or-divider div {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #dbdbdb;
+}
+
+.or-divider span {
+    margin: 0 10px;
+    color: #8e8e8e;
+    font-weight: 600;
+}
+
+.forgot-password {
+    color: #385185;
+    font-size: 12px;
+}
+
+.signup-box {
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    padding: 20px;
+}
+
+.signup-box p {
+    font-size: 14px;
+}
+
+.signup-box a {
+    color: #0095f6;
+    font-weight: 600;
+}
+
+.app-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.app-links p {
+    font-size: 14px;
+    color: #8e8e8e;
+}
+
+.store-buttons img {
+    width: 135px;
+    margin: 0 5px;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .container {
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .phone-container {
+        flex: 1;
+    }
+
+    .login-container {
+        flex: 1;
+        max-width: 350px;
+    }
+}
