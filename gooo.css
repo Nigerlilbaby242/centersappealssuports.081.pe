@@ -2,138 +2,140 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #fafafa;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-.phone-container img {
-    max-width: 100%;
-    height: auto;
-}
-
 .login-container {
-    width: 100%;
-    max-width: 350px;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
 .login-box {
     background-color: #fff;
     border: 1px solid #dbdbdb;
-    padding: 40px;
-    margin-bottom: 10px;
-}
-
-.login-box h1 {
-    font-family: 'Billabong', sans-serif;
-    font-size: 50px;
-    margin-bottom: 30px;
-}
-
-.login-box input {
+    padding: 20px;
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background: #fafafa;
-    border: 1px solid #dbdbdb;
-    border-radius: 5px;
-}
-
-.login-box button {
-    width: 100%;
-    background-color: #0095f6;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 10px;
-}
-
-.login-box button.facebook-login {
-    background-color: #4267b2;
-}
-
-.or-divider {
-    display: flex;
-    align-items: center;
+    max-width: 350px;
     text-align: center;
-    margin: 10px 0;
+    border-radius: 5px;
 }
 
-.or-divider div {
-    flex-grow: 1;
-    height: 1px;
-    background-color: #dbdbdb;
+.logo {
+    font-family: 'Billabong', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-.or-divider span {
-    margin: 0 10px;
-    color: #8e8e8e;
-    font-weight: 600;
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3897f0;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 .forgot-password {
-    color: #385185;
+    display: block;
+    margin-top: 15px;
+    color: #00376b;
+    text-decoration: none;
     font-size: 12px;
 }
 
 .signup-box {
-    background-color: #fff;
-    border: 1px solid #dbdbdb;
-    padding: 20px;
-}
-
-.signup-box p {
+    margin-top: 15px;
+    padding: 20px 0;
     font-size: 14px;
 }
 
 .signup-box a {
-    color: #0095f6;
-    font-weight: 600;
+    color: #3897f0;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .app-links {
-    text-align: center;
     margin-top: 20px;
+    text-align: center;
 }
 
 .app-links p {
     font-size: 14px;
-    color: #8e8e8e;
+    margin-bottom: 10px;
 }
 
-.store-buttons img {
+.store-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.store-buttons .store-icon {
     width: 135px;
+    height: 40px;
     margin: 0 5px;
 }
 
-/* Responsive Design */
-@media (min-width: 768px) {
-    .container {
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
 
-    .phone-container {
-        flex: 1;
-    }
+footer ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    list-style: none;
+}
 
+footer ul li {
+    margin: 0 10px;
+    color: #8e8e8e;
+    font-size: 12px;
+}
+
+footer p {
+    color: #8e8e8e;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
     .login-container {
-        flex: 1;
-        max-width: 350px;
+        padding: 0 20px;
+    }
+
+    .login-box {
+        width: 100%;
+    }
+
+    .store-buttons {
+        flex-direction: column;
+    }
+
+    .store-buttons .store-icon {
+        margin-bottom: 10px;
     }
 }

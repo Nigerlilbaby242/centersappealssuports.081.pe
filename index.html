@@ -5,43 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instagram Login UI</title>
     <link rel="stylesheet" href="gooo.css">
+    <script src="script.js" defer></script> <!-- JavaScript file linked here -->
 </head>
 <body>
-    <div class="container">
-        <!-- Left Section: Image mockup with phones -->
-        <div class="phone-container">
-            <img src="screenshot3.png" alt="Instagram phones">
-        </div>
-
-        <!-- Right Section: Login Form -->
-        <div class="login-container">
-            <div class="login-box">
-                <h1>Instagram</h1>
-                <form>
-                    <input type="text" placeholder="Phone number, username, or email">
-                    <input type="password" placeholder="Password">
-                    <button type="submit">Log in</button>
-                    <div class="or-divider">
-                        <div></div>
-                        <span>OR</span>
-                        <div></div>
-                    </div>
-                    <button class="facebook-login">Log in with Facebook</button>
-                    <a href="#" class="forgot-password">Forgot password?</a>
-                </form>
-            </div>
+    <div class="login-container">
+        <div class="login-box">
+            <h1 class="logo">Instagram</h1>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Phone number, username, or email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </form>
             <div class="signup-box">
                 <p>Don't have an account? <a href="#">Sign up</a></p>
             </div>
         </div>
-    </div>
-
-    <div class="app-links">
-        <p>Get the app.</p>
-        <div class="store-buttons">
-            <img src="google-play.png" alt="Google Play Store">
-            <img src="microsoft-store.png" alt="Microsoft Store">
+        <div class="app-links">
+            <p>Get the app.</p>
+            <div class="store-buttons">
+                <img src="badge_android_english-en.png" alt="Google Play Store" class="store-icon">
+                <img src="badge_ios_english-en.png" alt="Microsoft Store" class="store-icon">
+            </div>
         </div>
     </div>
+    <footer>
+        <ul>
+            <li>Meta</li>
+            <li>About</li>
+            <li>Blog</li>
+            <li>Jobs</li>
+            <li>Help</li>
+            <li>API</li>
+            <li>Privacy</li>
+            <li>terms</li>
+            
+        </ul>
+        <p>© 2023 Instagram from Meta</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
+
+
